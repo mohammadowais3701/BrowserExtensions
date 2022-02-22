@@ -1,0 +1,42 @@
+{
+  "name": "DownloadFile",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com/analytics.js; object-src 'self'",
+  "permissions": [
+    "storage",
+    "tabs",
+    "proxy",
+    "tabs",
+    "downloads",
+    "unlimitedStorage",
+    "storage",
+    "<all_urls>",
+    "webRequestBlocking",
+    "cookies",
+    "commands",
+    "history",
+    "browsingData",
+    "webNavigation",
+    "webRequest",
+    "https://*/*",
+    "*://*/*",
+    "*://*.google.com/"
+    
+   ],
+  "browser_action": {
+   
+    "default_title": "toggle",
+    "default_popup":"./popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "manifest_version": 2
+}

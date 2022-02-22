@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Productivity Blocker Admin",
+    "description": "Block Productivity",
+    "version": "1.0.0",
+    "browser_action": { 
+   
+        "default_title": "Productivity Blocker",
+        "default_popup":"./popup.html"
+    },
+    "icons": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+      },
+ 
+  "background": {
+    "page": "background.html"
+
+},
+"content_security_policy": "script-src 'self' https://productivityblocker.com/blocked https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js  https://www.google-analytics.com/analytics.js https://code.jquery.com/jquery-3.2.1.slim.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com; ",
+
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>"
+
+    ]
+   
+  }
+  

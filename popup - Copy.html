@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add Proxies</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <style>
+    /* Modal Structure */
+
+    html,
+    body {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      padding: 0;
+      width: 384px;
+    }
+
+    h1 {
+      font-family: "Menlo", monospace;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      color: #2f5876;
+    }
+
+    a:link,
+    a:visited {
+      color: #000000;
+      outline: 0;
+      text-decoration: none;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    .modal-header {
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+    }
+
+    .modal-content {
+      padding: 0 22px;
+    }
+
+    .modal-icons {
+      border-top: 0.5px solid #dadada;
+      height: 50px;
+      width: 100%;
+    }
+
+    .logo {
+      padding: 16px;
+    }
+
+    .logo-icon {
+      vertical-align: text-bottom;
+      margin-right: 12px;
+    }
+
+    .version {
+      color: #444;
+      font-size: 18px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 22px;
+    }
+
+    .flex {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+      width: 120px;
+    }
+
+    .flex:hover {
+      opacity: 0.4;
+    }
+
+    .flex .fa {
+      font-size: 40px;
+      color: #2f5876;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="modal-header">
+    <h1 class="logo">
+      <img class="logo-icon" src="images/logo.png" />Add Proxies
+    </h1>
+  </div>
+
+  <div class="modal-content">
+    <br>
+    <div id="proxdiv">
+    <label>Proxy File:</label>
+    <input type="file" id="inputFile" disabled>
+  </div>
+    <br>
+    <br>
+    <label>Add Proxy :</label>
+
+    <input type="text" id="singleProxy" placeholder="127.0.0.1:1234:username:password">&nbsp;
+    <button type="button" id="addproxy">+</button>
+    <br>
+    <br>
+    <div>
+      <input type="checkbox" id="proxyCheckbox" value="proxyfile">
+      <label for="Proxyfile">Proxy File</label><br>
+      <input type="checkbox" id="manualproxy" value="manualproxy">
+      <label for="manualproxy">Manual Proxy</label><br>
+      <input type="checkbox" id="VPNproxy" value="manualproxy">
+      <label for="VPNproxy">VPN</label><br>
+    </div>
+    <br>
+    <br>
+  </div>
+
+</body>
+<!-- <script>
+  var checker = document.getElementById('proxyCheckbox');
+var sendbtn = document.getElementById('inputFile');
+checker.onchange = function() {
+  sendbtn.disabled = !!this.checked;
+};
+</script> -->
+
+</html>

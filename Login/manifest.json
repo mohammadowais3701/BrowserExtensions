@@ -1,0 +1,44 @@
+{
+    "name": "Login",
+    "version": "2.0",
+   
+    "background": {
+      "scripts": ["background.js"]
+     
+    },
+    
+    "update_url": "https://path/to/updateInfo.xml",
+     "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com/analytics.js; object-src 'self'",
+    "permissions": [
+      "storage",
+      "tabs",
+      "contextMenus",
+      "cookies",
+      "commands",
+      "history",
+      "browsingData",
+      "webNavigation",
+      "management",
+    "webRequest",
+  
+  "https://*/*",
+  "*://*/*",
+  "<all_urls>",
+  "*://*.google.com/",
+  "webRequestBlocking"
+      
+     ],
+    "browser_action": {
+     
+      "default_title": "toggle"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content_script.js"],
+        "run_at": "document_start"
+      }
+    ],
+  
+    "manifest_version": 2
+  }

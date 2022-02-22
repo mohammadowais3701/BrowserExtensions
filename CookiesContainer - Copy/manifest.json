@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Contextual Identities",
+    "version": "1.0",
+    "browser_action": {
+      "browser_style": true,
+      "default_title": "Contextual Identities"
+     
+    },
+    "chrome_settings_overrides": { },
+    "chrome_url_overrides" : {
+      "newtab": "context.html"
+    },
+   
+    
+    "permissions": [
+        "contextualIdentities",
+        "cookies"
+    ]
+  }

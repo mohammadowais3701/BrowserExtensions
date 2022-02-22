@@ -1,0 +1,11 @@
+{  
+    "manifest_version": 2,  
+    "name": "Muhammad owais",  
+    "description": "My LinkedIn profile",  
+    "version": "1.0",  
+    "browser_action": {  
+        "default_icon": "images/icon.png",  
+        "default_popup": "popup.html"  
+    },  
+    "permissions": ["activeTab"]  
+}  

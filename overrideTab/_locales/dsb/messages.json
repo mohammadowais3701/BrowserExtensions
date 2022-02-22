@@ -1,0 +1,149 @@
+{
+  "background_color_title": {
+    "message": "Slězynowa barwa"
+  },
+  "clear_addressbar_description": {
+    "message": "Awtomatiske proznjenje  adresowego póla abo markěrowanje URL tuchylu njejo móžne za WebExtensions. To se změna z boka Mozilla pomina."
+  },
+  "clear_addressbar_title": {
+    "message": "Adresowe pólo wuprozniś / URL markěrowaś"
+  },
+  "extension_description": {
+    "message": "Z New Tab Override móžoš bok póstajiś, kótaryž se pśi wócynjanju nowego rejtarka pokazujo."
+  },
+  "extension_name": {
+    "message": "New Tab Override"
+  },
+  "feed_published_at": {
+    "message": "Wózjawjony:"
+  },
+  "feed_read_more": {
+    "message": "Dalej cytaś…"
+  },
+  "feed_title": {
+    "message": "Nowosći Mozilla"
+  },
+  "focus_website_description": {
+    "message": "Fokus na webbok město na adresowe pólo stajiś"
+  },
+  "focus_website_title": {
+    "message": "Fokus"
+  },
+  "github_link": {
+    "message": "New Tab Override na GitHub"
+  },
+  "github_notice": {
+    "message": "Žycyš sebje funkcije abo coš zmólki k wěsći daś? Piš rozpšawu na GitHub:"
+  },
+  "homepage_description": {
+    "message": "Gaž toś to nastajenje zmóžnjaš, Firefox startowy bok teke ako bok za nowy rejtark wužywa. Zapódaj about:preferences#home do adresowego póla, aby startowy bok změnił. Pódpěraju se jano startowe boki, kótarež se z http:// abo https:// zachopinaju. Gaž su někotare startowe boki skonfigurěrowane, buźo New Tab Override prědny wužywaś."
+  },
+  "introduction": {
+    "message": "Toś ten bok staja se k dispoziciji wót {0}: Wubjeŕ, kótary bok ma se ako nowy rejtark wócyniś!"
+  },
+  "learn_more": {
+    "message": "Dalšne informacije"
+  },
+  "local_file_delete_confirmation": {
+    "message": "Coš napšawdu dataju ze składowaka rozšyrjenja lašowaś?"
+  },
+  "local_file_delete_text": {
+    "message": "eksistěrujucu dataju lašowaś"
+  },
+  "local_file_description": {
+    "message": "Restrikcijow pśez Firefox dla njejo móžno za rozšyrjenja, pśistup na lokalne dataje měś. New Tab Override śi nanejmjenjej móžnosć bitujo, lokalne dataje do składowaka rozšyrjenja zacytaś a na toś ten nałog ako wopśimjeśe za nowy rejtark wužywaś. Ewentuelnje w nim wopśimowane URL a zwězanja k wobrazam a CSS- a JavaScriptowym datajam muse pśez web k dostaśeju byś, dokulaž Firefox njama pśistup na lokalne dataje na systemje. Rozwaž pšosym wužywanje lokalnego webserwera ako alternatiwu, na pśikład pśez MAMP abo XAMPP z nastajenim  „wót wužywarja definěrowany URL“. To bźez wobgranicowanja funkcioněrujo."
+  },
+  "local_file_no_file": {
+    "message": "Sy opciju „lokalna dataja“ wubrał, ale njejsy lokalnu dataju składł. Pšosym nachwataj to w nastajenjach New Tab Override."
+  },
+  "local_file_title": {
+    "message": "Lokalna dataja"
+  },
+  "local_file_upload": {
+    "message": "Lokalnu dataju składowaś"
+  },
+  "new_tab_title": {
+    "message": "Nowy rejtark"
+  },
+  "omnibox_command_settings": {
+    "message": "Nastajenja za nowy rejtark wócyniś"
+  },
+  "review_text": {
+    "message": "Dodank se śi spódoba? Ga zawóstaj pógódnośenje na"
+  },
+  "settings_donate": {
+    "message": "Pósćiś"
+  },
+  "settings_donation_text": {
+    "message": "Pšosym rozwažuj dar, aby dalšne wuwijanje toś togo dodanka pódpěrał."
+  },
+  "settings_feed_permission_description": {
+    "message": "Firefox dowólnosć trjeba, aby powěsćowy kanal soeren-hentzschel.at cytał. Móžoš dowólnosć kuždy cas zajmjeś."
+  },
+  "settings_feed_permission_needed": {
+    "message": "Aby mógał toś tu funkciju wužywaś, musyš Firefox dowóliś, datowe žrědło cytaś."
+  },
+  "settings_feed_permission_revoke_description": {
+    "message": "Firefox dowólnosć trjeba, aby powěsćowy kanal soeren-hentzschel.at cytał. Sy toś tu dowólnosć južo dał."
+  },
+  "settings_main_caption": {
+    "message": "Nastajenja"
+  },
+  "settings_permission_action": {
+    "message": "Dowólnosć daś"
+  },
+  "settings_permission_revoke_action": {
+    "message": "Dowólnosć zajmjeś"
+  },
+  "settings_support_caption": {
+    "message": "Pódpěra"
+  },
+  "settings_title": {
+    "message": "Nowy rejtark — Nastajenja"
+  },
+  "settings_url_field_placeholder": {
+    "message": "URL"
+  },
+  "tab_position_title": {
+    "message": "Rejtarikowa pozicija"
+  },
+  "tab_position_option_relatedAfterCurrent": {
+    "message": "Nowe rejtariki pódla aktualnego rejtarika wócyniś, jolic z nim zwisuju, howac na kóńcu rejtarkoweje rědki (standard)"
+  },
+  "tab_position_option_afterCurrent": {
+    "message": "Wšykne nowe rejtariki pódla aktualnego rejtarika wócyniś"
+  },
+  "tab_position_option_atEnd": {
+    "message": "Wšě rajtarki na kóncu rajtarkoweje lajsty wočinić"
+  },
+  "type_options_background_color": {
+    "message": "slězynowa barwa"
+  },
+  "type_options_custom_url": {
+    "message": "wót wužywarja definěrowany URL"
+  },
+  "type_options_feed": {
+    "message": "Nowinki Mozilla (nimski)"
+  },
+  "type_options_homepage": {
+    "message": "aktualny startowy bok"
+  },
+  "type_options_local_file": {
+    "message": "lokalna dataja"
+  },
+  "type_title": {
+    "message": "Opcija"
+  },
+  "url_description": {
+    "message": "How zapódany webbok se pśi wócynjanju nowego rejtarka pokazujo. Pódpěraju se jano URL, kótarež se z http:// abo https:// zachopinaju. Glědajśo: Pśistup na lokalne dataje pśez URL njejo wěcej móžno restrikcijow Firefox dla. Pšosym rozwaž wužywanje opcije „lokalna dataja“ abo lokalnego webserwera, na pśikład pśez MAMP abo XAMPP."
+  },
+  "url_title": {
+    "message": "URL"
+  },
+  "url_validation_default": {
+    "message": "To njejo płaśiwy URL."
+  },
+  "url_validation_file": {
+    "message": "Pśistup na lokalne dataje pśez URL njejo wěcej móžny za rozšyrjenja."
+  }
+}

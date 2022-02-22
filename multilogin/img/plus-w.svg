@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-277.000000, -199.000000)">
+        <g id="Plus" transform="translate(277.000000, 199.000000)" fill="#fff" fill-rule="nonzero">
+            <path d="M18,9 C18,9.8295 17.928,10.5 17.0985,10.5 L10.5,10.5 L10.5,17.0985 C10.5,17.9265 9.8295,18 9,18 C8.1705,18 7.5,17.9265 7.5,17.0985 L7.5,10.5 L0.9015,10.5 C0.0735,10.5 0,9.8295 0,9 C0,8.1705 0.0735,7.5 0.9015,7.5 L7.5,7.5 L7.5,0.9015 C7.5,0.072 8.1705,0 9,0 C9.8295,0 10.5,0.072 10.5,0.9015 L10.5,7.5 L17.0985,7.5 C17.928,7.5 18,8.1705 18,9 Z" id="Shape"/>
+        </g>
+    </g>
+</svg>

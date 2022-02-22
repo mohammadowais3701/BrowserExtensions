@@ -1,0 +1,34 @@
+{
+  "name": "getCookies",
+  "version": "1.0",
+ 
+  "background":{
+    "service_worker":"./background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "contextMenus",
+    "cookies",
+    "<all_urls>",
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "sessions",
+    "history",
+    "http://*/*", "https://*/*"
+    
+    
+   ],
+   "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["handlerScript.js"]
+    }],
+
+
+    "host_permissions":[
+      "<all_urls>"
+    ],
+  "manifest_version": 3
+}

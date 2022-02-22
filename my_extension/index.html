@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>My extension</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+   </head>
+   <body>
+      <div class="phone_wrapper">
+         <header>
+            <div class="speaker">
+               <div class="mic"></div>
+            </div>
+            <nav>
+               <div class="tab tab1 active">
+                  <div class="block">
+                     <div class="switch">
+                        <label>
+                        <input type="checkbox" checked>
+                        <span class="lever"></span>
+                        </label>
+                        <span class="tab-title">spam</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab tab2">
+                  <div class="block">
+                     <div class="switch">
+                        <label>
+                        <input type="checkbox" checked>
+                        <span class="lever"></span>
+                        </label>
+                        <span class="tab-title">inbox</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab tab3">
+                  <div class="block">
+                     <div class="switch">
+                        <label>
+                        <input type="checkbox" checked>
+                        <span class="lever"></span>
+                        </label>
+                        <span class="tab-title">promo</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="indicator"></div>
+            </nav>
+         </header>
+         <main>
+            <div class="tab_reel">
+               <div class="tab_panel1">
+                  <!-- SPAM Panel -->
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>Search Query</div>
+                     </div>
+                     <input type="text" id="spam_searchQ" placeholder="Query">
+                  </div>
+                  <div class="card card_large">
+                     <div class="switch">
+                        <label>
+                        <input type="checkbox" id="not_spam">
+                        <span class="lever"></span>
+                        <span class="tab-title">Prefrome Not spam to all spam folder</span></label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># emails to open</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_open_emails" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_open_emails_min">
+                                 <input type="number" placeholder="max" id="spam_number_open_emails_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># links to be clicked</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_click_links" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_click_links" class="param" type="number" placeholder="# clicks">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_click_links_min">
+                                 <input type="number" placeholder="max" id="spam_number_click_links_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># mark as important</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_important" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_important" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_important_min">
+                                 <input type="number" placeholder="max" id="spam_number_important_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to star</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_star" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_star" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_star_min">
+                                 <input type="number" placeholder="max" id="spam_number_star_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># add to tasks</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_tasks" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_tasks_min">
+                                 <input type="number" placeholder="max" id="spam_number_tasks_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to reply on</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="spam_random_reply" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="spam_number_reply" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="spam_number_reply_min">
+                                 <input type="number" placeholder="max" id="spam_number_reply_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>reply content</div>
+                     </div>
+                     <input type="text" id="spam_reply_folder" placeholder="Folder">
+                  </div>
+               </div>
+               <div class="tab_panel2">
+                  <!-- INBOX Panel -->
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>Search Query</div>
+                     </div>
+                     <input type="text" id="inbox_searchQ" placeholder="Query">
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># emails to open</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_open_emails" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_open_emails_min">
+                                 <input type="number" placeholder="max" id="inbox_number_open_emails_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># links to be clicked</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_click_links" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_click_links" class="param" type="number" placeholder="# clicks">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_click_links_min">
+                                 <input type="number" placeholder="max" id="inbox_number_click_links_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># mark as important</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_important" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_important" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_important_min">
+                                 <input type="number" placeholder="max" id="inbox_number_important_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to star</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_star" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_star" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_star_min">
+                                 <input type="number" placeholder="max" id="inbox_number_star_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># add to tasks</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_tasks" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_tasks_min">
+                                 <input type="number" placeholder="max" id="inbox_number_tasks_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to reply on</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="inbox_random_reply" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="inbox_number_reply" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="inbox_number_reply_min">
+                                 <input type="number" placeholder="max" id="inbox_number_reply_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>reply content</div>
+                     </div>
+                     <input type="text" id="inbox_reply_folder" placeholder="Folder">
+                  </div>
+               </div>
+               <div class="tab_panel3">
+                  <!-- PROMO Panel -->
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>Search Query</div>
+                     </div>
+                     <input type="text" id="promo_searchQ" placeholder="Query">
+                  </div>
+                  <div class="card card_large">
+                     <div class="switch">
+                        <label>
+                        <input type="checkbox" id="not_promo">
+                        <span class="lever"></span>
+                        <span class="tab-title">Move promo to notification/update folder</span></label>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># emails to open</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_open_emails" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_open_emails_min">
+                                 <input type="number" placeholder="max" id="promo_number_open_emails_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># links to be clicked</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_click_links" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_click_links" class="param" type="number" placeholder="# clicks">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_click_links_min">
+                                 <input type="number" placeholder="max" id="promo_number_click_links_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># mark as important</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_important" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_important" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_important_min">
+                                 <input type="number" placeholder="max" id="promo_number_important_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to star</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_star" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_star" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_star_min">
+                                 <input type="number" placeholder="max" id="promo_number_star_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="card">
+                        <span class="tab-title"># add to tasks</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_tasks" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_open_emails" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_tasks_min">
+                                 <input type="number" placeholder="max" id="promo_number_tasks_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <span class="tab-title"># emails to reply on</span>
+                        <div class="card card_list">
+                           <div class="desc">
+                              <div class="block">
+                                 <div class="switch">
+                                    <label>
+                                    <input type="checkbox" id="promo_random_reply" class="random-toggle">
+                                    <span class="lever"></span>
+                                    <span class="tab-title">RANDOM</span></label>
+                                 </div>
+                              </div>
+                              <input id="promo_number_reply" class="param" type="number" placeholder="# emails">
+                              <div class="random" style="display:none;">
+                                 <input type="number" placeholder="min" id="promo_number_reply_min">
+                                 <input type="number" placeholder="max" id="promo_number_reply_max">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card card_large">
+                     <div class="desc">
+                        <div>reply content</div>
+                     </div>
+                     <input type="text" id="promo_reply_folder" placeholder="Folder">
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+      <!-- partial -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script  src="script.js"></script>
+   </body>
+</html>
+

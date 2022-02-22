@@ -1,0 +1,149 @@
+{
+  "background_color_title": {
+    "message": "Pozadkowa barba"
+  },
+  "clear_addressbar_description": {
+    "message": "Awtomatiske prózdnjenje adresoweho pola abo markěrowanje URL tuchwilu za WebExtensions móžne njeje. To sej změna ze strony Mozilla wužaduje."
+  },
+  "clear_addressbar_title": {
+    "message": "Adresowe polo wuprózdnić / URL měrkěrować"
+  },
+  "extension_description": {
+    "message": "Z New Tab Override móžeš stronu postajić, kotraž so při wočinjenju noweho rajtarka pokazuje."
+  },
+  "extension_name": {
+    "message": "New Tab Override"
+  },
+  "feed_published_at": {
+    "message": "Wozjewjeny:"
+  },
+  "feed_read_more": {
+    "message": "Dale čitać…"
+  },
+  "feed_title": {
+    "message": "Nowinki Mozilla"
+  },
+  "focus_website_description": {
+    "message": "Fokus na webstronu město na adresowe polo stajić"
+  },
+  "focus_website_title": {
+    "message": "Fokus"
+  },
+  "github_link": {
+    "message": "New Tab Override na GitHub"
+  },
+  "github_notice": {
+    "message": "Přeješ sej funkcije abo chceš zmylk zdźělić? Pisaj rozprawu na GitHub:"
+  },
+  "homepage_description": {
+    "message": "Hdyž tute nastajenje zmóžnješ, Firefox startowu stronu tež jako stronu za nowy rajtark wužiwa. Zapodaj about:preferences#home do adresoweho pola, zo by startowu stronu změnił. Podpěruja so jenož startowe strony, kotrež so z http:// abo https:// započinaja. Hdyž su wjacore startowe strony skonfigurowane, budźe New Tab Override prěnju wužiwać."
+  },
+  "introduction": {
+    "message": "Tuta strona staja so k dispoziciji wot {0}: Wubjer, kotra strona ma so jako nowy rajtark wočinić!"
+  },
+  "learn_more": {
+    "message": "Dalše Informacije"
+  },
+  "local_file_delete_confirmation": {
+    "message": "Chceš woprawdźe dataju ze składowaka rozšěrjenja zhašeć?"
+  },
+  "local_file_delete_text": {
+    "message": "eksistowacu dataju zhašeć"
+  },
+  "local_file_description": {
+    "message": "Restrikcijow přez Firefox dla za rozšěrjenja móžno njeje, přistup na lokalne dataje měć. New Tab Override ći znajmjeńša móžnosć skići, lokalne dataje do składowaka rozšěrjenja začitać a na tute wašnje jako wobsah za nowy rajtark wužiwać. Ewentuelnje w nim wobsahowane URL a zwjazanja k wobrazam a CSS- a JavaScriptowym datajam dyrbja přez web docpějomne być, dokelž Firefox přistup na lokalne dataje na systemje nima. Rozwaž prošu wužiwanje lokalneho webserwera jako alternatiwu, na přikład přez MAMP abo XAMPP z nastajenjom  „wot wužiwarja definowany URL“. To bjez wobmjezowanja funguje."
+  },
+  "local_file_no_file": {
+    "message": "Sy opciju „lokalna dataja“ wubrał, ale njejsy lokalnu dataju składował. Prošu nachwataj to w nastajenjach New Tab Override."
+  },
+  "local_file_title": {
+    "message": "Lokalna dataja"
+  },
+  "local_file_upload": {
+    "message": "Lokalnu dataju składować"
+  },
+  "new_tab_title": {
+    "message": "Nowy rajtark"
+  },
+  "omnibox_command_settings": {
+    "message": "Nastajenja za nowy rajtark wočinić"
+  },
+  "review_text": {
+    "message": "Přidatk so ći spodoba? Da zawostaj pohódnoćenje na"
+  },
+  "settings_donate": {
+    "message": "Darić"
+  },
+  "settings_donation_text": {
+    "message": "Prošu rozmysluj dar, zo by dalše wuwiwanje tutoho přidatka podpěrał."
+  },
+  "settings_feed_permission_description": {
+    "message": "Firefox dowolnosć trjeba, zo by powěsćowy kanal soeren-hentzschel.at čitał. Móžeš dowolnosć kóždy čas zebrać."
+  },
+  "settings_feed_permission_needed": {
+    "message": "Zo by móhł tutu funkciju wužiwać, dyrbiš Firefox dowolić, datowe žórło čitać."
+  },
+  "settings_feed_permission_revoke_description": {
+    "message": "Firefox dowolnosć trjeba, zo by powěsćowy kanal soeren-hentzschel.at čitał. Sy tutu dowolnosć hižo dał."
+  },
+  "settings_main_caption": {
+    "message": "Nastajenja"
+  },
+  "settings_permission_action": {
+    "message": "Dowolnosć dać"
+  },
+  "settings_permission_revoke_action": {
+    "message": "Dowolnosć zebrać"
+  },
+  "settings_support_caption": {
+    "message": "Podpěra"
+  },
+  "settings_title": {
+    "message": "Nowy rajtark — Nastajenja"
+  },
+  "settings_url_field_placeholder": {
+    "message": "URL"
+  },
+  "tab_position_title": {
+    "message": "Rajtarkowa pozicija"
+  },
+  "tab_position_option_relatedAfterCurrent": {
+    "message": "Nowe rajtarki pódla aktualneho rajtarka wočinić, jeli z nim zwisuja, hewak na kóncu rajtarkoweje lajsty (standard)"
+  },
+  "tab_position_option_afterCurrent": {
+    "message": "Wšě nowe rajtarki pódla aktualneho rajtarka wočinić"
+  },
+  "tab_position_option_atEnd": {
+    "message": "Wšě rajtarki na kóncu rajtarkoweje lajsty wočinić"
+  },
+  "type_options_background_color": {
+    "message": "pozadkowa barba"
+  },
+  "type_options_custom_url": {
+    "message": "wot wužiwarja definowany URL"
+  },
+  "type_options_feed": {
+    "message": "Nowinki Mozilla (němsce)"
+  },
+  "type_options_homepage": {
+    "message": "aktualna startowa strona"
+  },
+  "type_options_local_file": {
+    "message": "lokalna dataja"
+  },
+  "type_title": {
+    "message": "Opcija"
+  },
+  "url_description": {
+    "message": "Tu zapodata webstrona so při wočinjenju noweho rajtarka pokazuje. Podpěruja so jenož URL, kotrež so z http:// abo https:// započinaja. Kedźbu: Přistup na lokalne dataje přez URL restrikcijow Firefox dla hižo móžny njeje. Prošu rozwaž wužiwanje opcije „lokalna dataja“ abo lokalneho webserwera, na přikład přez MAMP abo XAMPP."
+  },
+  "url_title": {
+    "message": "URL"
+  },
+  "url_validation_default": {
+    "message": "To płaćiwy URL njeje."
+  },
+  "url_validation_file": {
+    "message": "Přistup na lokalne dataje přez URL za rozšěrjenja hižo móžny njeje."
+  }
+}

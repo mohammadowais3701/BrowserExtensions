@@ -1,0 +1,111 @@
+<head>
+  <style>
+body {
+  position: relative;
+  background: #1A1A1A;
+  margin: 0px;
+  padding: 0px;
+  height: 260px;
+  width: 340px;
+}
+img {
+  height: 50px;
+  padding: 10px 0px 60px 10px;
+}
+
+h4 {
+  color: #969696;
+  font-family: Helvetica, Sans-Serif;
+  font-style: italic;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: .2pt;
+}
+
+.flipswitch {
+  position: relative;
+  width: 102px;
+  margin: auto;
+}
+
+.flipswitch input[type=checkbox] {
+  display: none;
+}
+
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0px solid #999999;
+  border-radius: 100px;
+}
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before, .flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 38px;
+  padding: 0;
+  line-height: 35px;
+  font-size: 18px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.flipswitch-inner:before {
+  content: "ON";
+  padding-left: 18px;
+  background-color: #75FB7A;
+  align: left;
+  color: #007005;
+}
+.flipswitch-inner:after {
+  content: "OFF";
+  padding-right: 18px;
+  background-color: #808080;
+  color: #303030;
+  text-align: right;
+}
+.flipswitch-switch {
+  width: 44px;
+  margin: -3px;
+  background: #FFFFFF;
+
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 72px;
+  transition: all 0.3s ease-in 0s;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 0;
+}
+  
+  </style>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/popup.js"></script>
+</head>
+
+<body>
+<a href="https://www.productivityblocker.com/"><img src="https://i.ibb.co/5GLhMBK/Productivity-Blocker-Logo-Inverted-Large.png"></a>
+<div class="flipswitch">
+<input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+<label class="flipswitch-label" for="fs">
+    <div class="flipswitch-inner"></div>
+    <div class="flipswitch-switch"></div>
+</label>
+</div>
+<h4>Takes a few seconds to turn on/off.</h4>
+</body>

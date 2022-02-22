@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extension_name__",
+  "version": "15.1.0",
+  "description": "__MSG_extension_description__",
+  "icons": {
+    "48": "images/icon.svg",
+    "96": "images/icon.svg"
+  },
+
+  "background": {
+    "scripts": ["js/core/utils.js", "js/core/background.js"]
+  },
+  "chrome_settings_overrides": { },
+  "chrome_url_overrides" : {
+    "newtab": "html/newtab.html"
+  },
+  "browser_action": {
+    "browser_style": false,
+    "default_area": "navbar",
+    "default_icon": "images/icon.svg",
+    "default_title": "__MSG_settings_title__"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Shift+F12"
+      }
+    }
+  },
+  "omnibox": {
+    "keyword" : "newtab"
+  },
+  "permissions": [
+    "browserSettings",
+    "cookies",
+    "history",
+    "contextualIdentities",
+    "menus",
+    "storage",
+    "tabs"
+  ],
+  "default_locale": "en",
+  "applications": {
+    "gecko": {
+      "id": "newtaboverride@agenedia.com",
+      "strict_min_version": "78.0"
+    }
+  }
+}

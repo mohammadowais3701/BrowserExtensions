@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "My Browser",
+    "version": "1.0",
+    "browser_action": {
+      "browser_style": true
+     
+     
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "mohammadowais3701@gmail.com"
+      }
+    },
+    "chrome_settings_overrides": { },
+    "chrome_url_overrides" : {
+      "newtab": "context.html"
+    },
+   
+    
+    "permissions": [
+        "contextualIdentities",
+        "cookies"
+    ]
+  }

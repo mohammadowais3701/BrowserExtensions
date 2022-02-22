@@ -1,0 +1,149 @@
+{
+  "background_color_title": {
+    "message": "Hintergrund-Farbe"
+  },
+  "clear_addressbar_description": {
+    "message": "Das automatische Leeren der Adressleiste oder Markieren der URL ist für WebExtensions derzeit nicht möglich. Dies erfordert eine Änderung seitens Mozilla."
+  },
+  "clear_addressbar_title": {
+    "message": "Adressleiste leeren / URL markieren"
+  },
+  "extension_description": {
+    "message": "Mit New Tab Override kann die Seite festgelegt werden, welche beim Öffnen eines neuen Tabs angezeigt wird."
+  },
+  "extension_name": {
+    "message": "New Tab Override"
+  },
+  "feed_published_at": {
+    "message": "Veröffentlicht am"
+  },
+  "feed_read_more": {
+    "message": "Weiterlesen…"
+  },
+  "feed_title": {
+    "message": "Mozilla-Neuigkeiten"
+  },
+  "focus_website_description": {
+    "message": "Fokus auf Webseite statt in Adressleiste setzen"
+  },
+  "focus_website_title": {
+    "message": "Fokus"
+  },
+  "github_link": {
+    "message": "New Tab Override auf GitHub"
+  },
+  "github_notice": {
+    "message": "Feature-Wünsche oder Fehler-Bericht? Eröffne ein Ticket auf GitHub:"
+  },
+  "homepage_description": {
+    "message": "Bei Aktivierung dieser Option verwendet Firefox die Startseite auch als Seite für den neuen Tab. Du kannst die Startseite ändern, indem du about:preferences#home in die Adressleiste eingibst. Nur Startseiten, welche mit http:// oder https:// beginnen, werden unterstützt. Wenn mehrere Startseiten konfiguriert sind, wird New Tab Override die erste nutzen."
+  },
+  "introduction": {
+    "message": "Diese Seite wird bereitgestellt von {0}: Wähle, welche Seite beim Öffnen eines neuen Tabs angezeigt werden soll!"
+  },
+  "learn_more": {
+    "message": "Weitere Informationen"
+  },
+  "local_file_delete_confirmation": {
+    "message": "Bist du sicher, dass du die Datei aus dem Speicher der Erweiterung löschen möchtest?"
+  },
+  "local_file_delete_text": {
+    "message": "existierende Datei löschen"
+  },
+  "local_file_description": {
+    "message": "Aufgrund von Restriktionen seitens Firefox ist es für Erweiterungen nicht möglich, via URL auf lokale Dateien zuzugreifen. New Tab Override bietet dir zumindest die Möglichkeit, lokale HTML-Dateien in den Speicher der Erweiterung zu laden und auf diese Weise als Inhalt für den neuen Tab zu nutzen. Darin ggfs. enthaltene URLs und Verknüpfungen zu Bildern und CSS- sowie JavaScript-Dateien müssen über das Web erreichbar sein, da Firefox nicht auf lokale Dateien auf dem System zugreifen kann. Alternativ, erwäge bitte die Verwendung eines lokalen Webservers, zum Beispiel über MAMP oder XAMPP, mit der Option „benutzerdefinierte URL“. Das funktioniert ohne jede Einschränkung."
+  },
+  "local_file_no_file": {
+    "message": "Du hast die Option „lokale Datei“ ausgewählt, aber keine lokale Datei gespeichert. Bitte hol dies in den Einstellungen von New Tab Override nach."
+  },
+  "local_file_title": {
+    "message": "Lokale Datei"
+  },
+  "local_file_upload": {
+    "message": "Lokale Datei speichern"
+  },
+  "new_tab_title": {
+    "message": "Neuer Tab"
+  },
+  "omnibox_command_settings": {
+    "message": "Öffne die Einstellungen für den neuen Tab"
+  },
+  "review_text": {
+    "message": "Magst du diese Erweiterung? Dann hinterlasse bitte eine Bewertung auf"
+  },
+  "settings_donate": {
+    "message": "Spenden"
+  },
+  "settings_donation_text": {
+    "message": "Bitte erwäge eine Spende, um die weitere Entwicklung dieser Erweiterung zu gewährleisten."
+  },
+  "settings_feed_permission_description": {
+    "message": "Firefox benötigt deine Erlaubnis, um den News-Feed von soeren-hentzschel.at zu lesen. Die Berechtigung kann jederzeit widerrufen werden."
+  },
+  "settings_feed_permission_needed": {
+    "message": "Um diese Funktion nutzen zu können, musst du Firefox erlauben, die Datenquelle zu lesen."
+  },
+  "settings_feed_permission_revoke_description": {
+    "message": "Firefox benötigt deine Erlaubnis, um den News-Feed von soeren-hentzschel.at zu lesen. Du hast diese Berechtigung bereits erteilt."
+  },
+  "settings_main_caption": {
+    "message": "Einstellungen"
+  },
+  "settings_permission_action": {
+    "message": "Berechtigung erteilen"
+  },
+  "settings_permission_revoke_action": {
+    "message": "Berechtigung entziehen"
+  },
+  "settings_support_caption": {
+    "message": "Unterstützung"
+  },
+  "settings_title": {
+    "message": "Neuer Tab — Einstellungen"
+  },
+  "settings_url_field_placeholder": {
+    "message": "URL"
+  },
+  "tab_position_title": {
+    "message": "Tab-Position"
+  },
+  "tab_position_option_relatedAfterCurrent": {
+    "message": "Neue Tabs neben dem aktuellen Tab öffnen, wenn sie mit diesem zusammenhängen, ansonsten am Ende der Tableiste (Standard)"
+  },
+  "tab_position_option_afterCurrent": {
+    "message": "Alle neuen Tabs neben dem aktuellen Tab öffnen"
+  },
+  "tab_position_option_atEnd": {
+    "message": "Alle neuen Tabs am Ende der Tableiste öffnen"
+  },
+  "type_options_background_color": {
+    "message": "Hintergrund-Farbe"
+  },
+  "type_options_custom_url": {
+    "message": "benutzerdefinierte URL"
+  },
+  "type_options_feed": {
+    "message": "Mozilla-Neuigkeiten"
+  },
+  "type_options_homepage": {
+    "message": "aktuelle Startseite"
+  },
+  "type_options_local_file": {
+    "message": "lokale Datei"
+  },
+  "type_title": {
+    "message": "Option"
+  },
+  "url_description": {
+    "message": "Die hier eingegebene Webseite wird beim Öffnen eines neuen Tabs angezeigt. Nur URLs, welche mit http:// oder https:// beginnen, werden unterstützt. Bitte beachte: Der Zugriff auf lokale Dateien via URL ist aufgrund von Firefox-Restriktionen nicht länger möglich. Bitte erwäge die Verwendung der Option „lokale Datei“ oder eines lokalen Webservers, zum Beispiel über MAMP oder XAMPP."
+  },
+  "url_title": {
+    "message": "URL"
+  },
+  "url_validation_default": {
+    "message": "Dies ist keine gültige URL."
+  },
+  "url_validation_file": {
+    "message": "Der Zugriff auf lokale Dateien via URL ist für Erweiterungen nicht länger möglich."
+  }
+}
